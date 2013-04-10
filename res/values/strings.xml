@@ -4,5 +4,7 @@
     <string name="app_name">TryTouchScreen</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="touchIt">Haz click aquí</string>
+    <string name="touches">Pulsaciones:</string>
 
 </resources>
