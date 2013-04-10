@@ -14,7 +14,7 @@ public class PantallaTactiyActivity extends Activity implements OnTouchListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_pantalla_tactiy);
-		TextView entrada = (TextView)findViewById(R.id.textViewEntrada);
+		TextView entrada = (TextView) findViewById(R.id.textViewEntrada);
 		entrada.setOnTouchListener(this);
 	}
 
@@ -27,8 +27,10 @@ public class PantallaTactiyActivity extends Activity implements OnTouchListener 
 
 	@Override
 	public boolean onTouch(View vista, MotionEvent evento) {
-		TextView salida = (TextView)findViewById(R.id.textViewSalida);
-		salida.append(evento.toString() + "\n");
+		TextView salida = (TextView) findViewById(R.id.textViewSalida);
+		salida.append(evento.toString() + "\n" + "Presion: "
+				+ evento.getPressure() + "\n" + "Tama–o: " + evento.getSize()
+				+ "\n");
 		return true;
 	}
 
